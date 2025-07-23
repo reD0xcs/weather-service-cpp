@@ -1,0 +1,10 @@
+{
+  "name": "huge-cplusplus",
+  "version": "0.1.0",
+  "dependencies": [
+    "boost-beast",
+    "boost-json",
+    "gtest",
+    "fmt"
+  ]
+}

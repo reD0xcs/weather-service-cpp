@@ -1,0 +1,11 @@
+ninja_dyndep_version = 1.0
+build CMakeFiles\HugeCplasplas.dir\src\main.cpp.obj: dyndep
+
+build CMakeFiles\HugeCplasplas.dir\src\presentation\http_server.cpp.obj: dyndep
+
+build CMakeFiles\HugeCplasplas.dir\src\infrastructure\providers\mock_provider.cpp.obj: dyndep
+
+build CMakeFiles\HugeCplasplas.dir\src\application\weather_use_case.cpp.obj: dyndep
+
+build CMakeFiles\HugeCplasplas.dir\src\presentation\http_router.cpp.obj: dyndep
+

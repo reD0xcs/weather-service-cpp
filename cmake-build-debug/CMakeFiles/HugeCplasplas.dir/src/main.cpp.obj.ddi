@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "CMakeFiles\\HugeCplasplas.dir\\src\\main.cpp.obj",
+            "outputs": [
+                "C:\\Users\\catal\\CLionProjects\\HugeCplasplas\\cmake-build-debug\\vc140.pdb",
+                "CMakeFiles\\HugeCplasplas.dir\\src\\main.cpp.obj.ddi"
+            ],
+            "requires": []
+        }
+    ]
+}

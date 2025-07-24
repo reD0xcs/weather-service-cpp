@@ -103,8 +103,8 @@ The package gtest is compatible with built-in CMake targets:
     
     add_test(AllTestsInMain main)
 
-All requested installations completed successfully in: 1.91 ms
+All requested installations completed successfully in: 2.24 ms
 -- Running vcpkg install - done
--- Configuring done (5.9s)
+-- Configuring done (5.5s)
 -- Generating done (0.1s)
 -- Build files have been written to: C:/Users/catal/CLionProjects/HugeCplasplas/cmake-build-debug

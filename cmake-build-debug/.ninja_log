@@ -67,3 +67,16 @@
 1522	1594	7750770972980363	CMakeFiles/server.dir/src/infrastructure/providers/mock_provider.cpp.obj	5f115fd023ea6fc9
 1516	2399	7750770972920023	CMakeFiles/server.dir/src/application/weather_use_case.cpp.obj	c25bb444274dc6b9
 1510	6168	7750770972864971	CMakeFiles/server.dir/src/presentation/http_router.cpp.obj	a0e562dc4fd0120e
+45	560	7751395273733405	CMakeFiles/unit_tests.dir/src/infrastructure/providers/mock_provider.cpp.obj.ddi	870cc0baa5b687ce
+34	562	7751395273616933	CMakeFiles/unit_tests.dir/tests/weather_use_case_test.cpp.obj.ddi	e89e16b9d769909e
+562	624	7751395278896508	CMakeFiles/unit_tests.dir/CXX.dd	7fab44d51241f8bc
+562	624	7751395278896508	C:/Users/catal/CLionProjects/HugeCplasplas/cmake-build-debug/CMakeFiles/unit_tests.dir/CXXModules.json	7fab44d51241f8bc
+562	624	7751395278896508	CMakeFiles/unit_tests.dir/tests/dummy_test.cpp.obj.modmap	7fab44d51241f8bc
+562	624	7751395278896508	CMakeFiles/unit_tests.dir/tests/weather_use_case_test.cpp.obj.modmap	7fab44d51241f8bc
+562	624	7751395278896508	CMakeFiles/unit_tests.dir/src/application/weather_use_case.cpp.obj.modmap	7fab44d51241f8bc
+562	624	7751395278896508	CMakeFiles/unit_tests.dir/src/infrastructure/providers/mock_provider.cpp.obj.modmap	7fab44d51241f8bc
+632	1878	7751395279602067	CMakeFiles/unit_tests.dir/src/infrastructure/providers/mock_provider.cpp.obj	8ab064dd2ac7690c
+626	4633	7751395279540420	CMakeFiles/unit_tests.dir/tests/weather_use_case_test.cpp.obj	88733e48314d6c2
+4634	5903	7751395332191237	unit_tests.exe	652fe44c5db4cc0c
+4634	5903	7751395332191237	unit_tests[1]_tests.cmake	652fe44c5db4cc0c
+4634	5903	7751395332191237	C:/Users/catal/CLionProjects/HugeCplasplas/cmake-build-debug/unit_tests[1]_tests.cmake	652fe44c5db4cc0c

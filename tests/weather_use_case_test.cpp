@@ -5,13 +5,13 @@
 
 using ::testing::Return;
 
-class MockProvider : public IWeatherProvider {
+class MockWeatherProvider : public IWeatherProvider {
 public:
     MOCK_METHOD(std::optional<Weather>, fetch, (const City&), (override));
 };
 
 TEST(WeatherUseCase, returnsMockedTemp) {
-    auto mock = std::make_unique<MockProvider>();
+    auto mock = std::make_unique<MockWeatherProvider>();
     EXPECT_CALL(*mock, fetch(City{"Berlin"}))
         .WillOnce(Return(Weather{42.0, 'C'}));
 

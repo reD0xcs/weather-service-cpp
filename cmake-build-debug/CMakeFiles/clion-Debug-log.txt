@@ -1,70 +1,636 @@
-"C:\Program Files\JetBrains\CLion 2024.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2024.3/bin/ninja/win/x64/ninja.exe" -DCMAKE_TOOLCHAIN_FILE=C:/tools/vcpkg/scripts/buildsystems/vcpkg.cmake -G Ninja -S C:\Users\catal\CLionProjects\HugeCplasplas -B C:\Users\catal\CLionProjects\HugeCplasplas\cmake-build-debug
+"C:\Program Files\JetBrains\CLion 2024.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2024.3/bin/ninja/win/x64/ninja.exe" -DCMAKE_TOOLCHAIN_FILE=C:/Users/catal/vcpkg/scripts/buildsystems/vcpkg.cmake -DVCPKG_TARGET_TRIPLET=x64-windows-static-md -G Ninja -S C:\Users\catal\CLionProjects\HugeCplasplas -B C:\Users\catal\CLionProjects\HugeCplasplas\cmake-build-debug
 -- Running vcpkg install
 Detecting compiler hash for triplet x64-windows...
 Compiler found: C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe
+Detecting compiler hash for triplet x64-windows-static-md...
+Compiler found: C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe
 The following packages are already installed:
-  * boost-algorithm:x64-windows@1.88.0
-  * boost-align:x64-windows@1.88.0
-  * boost-array:x64-windows@1.88.0
-  * boost-asio:x64-windows@1.88.0
-  * boost-assert:x64-windows@1.88.0
-    boost-beast:x64-windows@1.88.0
-  * boost-bind:x64-windows@1.88.0
-  * boost-cmake:x64-windows@1.88.0
-  * boost-concept-check:x64-windows@1.88.0
-  * boost-config:x64-windows@1.88.0
-  * boost-container:x64-windows@1.88.0
-  * boost-container-hash:x64-windows@1.88.0
-  * boost-context:x64-windows@1.88.0
-  * boost-conversion:x64-windows@1.88.0
-  * boost-core:x64-windows@1.88.0
-  * boost-date-time:x64-windows@1.88.0
-  * boost-describe:x64-windows@1.88.0
-  * boost-detail:x64-windows@1.88.0
-  * boost-endian:x64-windows@1.88.0
-  * boost-exception:x64-windows@1.88.0
-  * boost-function:x64-windows@1.88.0
-  * boost-function-types:x64-windows@1.88.0
-  * boost-functional:x64-windows@1.88.0
-  * boost-fusion:x64-windows@1.88.0
-  * boost-headers:x64-windows@1.88.0
-  * boost-integer:x64-windows@1.88.0
-  * boost-intrusive:x64-windows@1.88.0
-  * boost-io:x64-windows@1.88.0
-  * boost-iterator:x64-windows@1.88.0
-    boost-json:x64-windows@1.88.0
-  * boost-lexical-cast:x64-windows@1.88.0
-  * boost-logic:x64-windows@1.88.0
-  * boost-move:x64-windows@1.88.0
-  * boost-mp11:x64-windows@1.88.0
-  * boost-mpl:x64-windows@1.88.0
-  * boost-numeric-conversion:x64-windows@1.88.0
-  * boost-optional:x64-windows@1.88.0
-  * boost-pool:x64-windows@1.88.0
-  * boost-predef:x64-windows@1.88.0
-  * boost-preprocessor:x64-windows@1.88.0
-  * boost-range:x64-windows@1.88.0
-  * boost-regex:x64-windows@1.88.0
-  * boost-smart-ptr:x64-windows@1.88.0
-  * boost-static-assert:x64-windows@1.88.0
-  * boost-static-string:x64-windows@1.88.0
-  * boost-system:x64-windows@1.88.0
-  * boost-throw-exception:x64-windows@1.88.0
-  * boost-tokenizer:x64-windows@1.88.0
-  * boost-tuple:x64-windows@1.88.0
-  * boost-type-index:x64-windows@1.88.0
-  * boost-type-traits:x64-windows@1.88.0
-  * boost-typeof:x64-windows@1.88.0
-  * boost-uninstall:x64-windows@1.88.0
-  * boost-unordered:x64-windows@1.88.0
-  * boost-utility:x64-windows@1.88.0
-  * boost-variant2:x64-windows@1.88.0
-  * boost-winapi:x64-windows@1.88.0
-    fmt:x64-windows@11.0.2#1
-    gtest:x64-windows@1.17.0#1
+  * boost-assert:x64-windows-static-md@1.88.0
+  * boost-cmake:x64-windows-static-md@1.88.0
+  * boost-config:x64-windows-static-md@1.88.0
+  * boost-container-hash:x64-windows-static-md@1.88.0
+  * boost-core:x64-windows-static-md@1.88.0
+  * boost-describe:x64-windows-static-md@1.88.0
+  * boost-headers:x64-windows-static-md@1.88.0
+  * boost-io:x64-windows-static-md@1.88.0
+  * boost-logic:x64-windows-static-md@1.88.0
+  * boost-move:x64-windows-static-md@1.88.0
+  * boost-mp11:x64-windows-static-md@1.88.0
+  * boost-optional:x64-windows-static-md@1.88.0
+  * boost-predef:x64-windows-static-md@1.88.0
+  * boost-preprocessor:x64-windows-static-md@1.88.0
+  * boost-smart-ptr:x64-windows-static-md@1.88.0
+  * boost-static-assert:x64-windows-static-md@1.88.0
+  * boost-static-string:x64-windows-static-md@1.88.0
+  * boost-system:x64-windows-static-md@1.88.0
+  * boost-throw-exception:x64-windows-static-md@1.88.0
+  * boost-type-index:x64-windows-static-md@1.88.0
+  * boost-type-traits:x64-windows-static-md@1.88.0
+  * boost-uninstall:x64-windows-static-md@1.88.0
+  * boost-utility:x64-windows-static-md@1.88.0
+  * boost-variant2:x64-windows-static-md@1.88.0
+  * boost-winapi:x64-windows-static-md@1.88.0
   * vcpkg-boost:x64-windows@2025-03-29
   * vcpkg-cmake:x64-windows@2024-04-23
   * vcpkg-cmake-config:x64-windows@2024-05-23
+The following packages will be built and installed:
+  * boost-algorithm:x64-windows-static-md@1.88.0
+  * boost-align:x64-windows-static-md@1.88.0
+  * boost-array:x64-windows-static-md@1.88.0
+  * boost-asio:x64-windows-static-md@1.88.0
+    boost-beast:x64-windows-static-md@1.88.0
+  * boost-bind:x64-windows-static-md@1.88.0
+  * boost-concept-check:x64-windows-static-md@1.88.0
+  * boost-container:x64-windows-static-md@1.88.0
+  * boost-context:x64-windows-static-md@1.88.0
+  * boost-conversion:x64-windows-static-md@1.88.0
+  * boost-date-time:x64-windows-static-md@1.88.0
+  * boost-detail:x64-windows-static-md@1.88.0
+  * boost-endian:x64-windows-static-md@1.88.0
+  * boost-exception:x64-windows-static-md@1.88.0
+  * boost-function:x64-windows-static-md@1.88.0
+  * boost-function-types:x64-windows-static-md@1.88.0
+  * boost-functional:x64-windows-static-md@1.88.0
+  * boost-fusion:x64-windows-static-md@1.88.0
+  * boost-integer:x64-windows-static-md@1.88.0
+  * boost-intrusive:x64-windows-static-md@1.88.0
+  * boost-iterator:x64-windows-static-md@1.88.0
+    boost-json:x64-windows-static-md@1.88.0
+  * boost-lexical-cast:x64-windows-static-md@1.88.0
+  * boost-mpl:x64-windows-static-md@1.88.0
+  * boost-numeric-conversion:x64-windows-static-md@1.88.0
+  * boost-pool:x64-windows-static-md@1.88.0
+  * boost-range:x64-windows-static-md@1.88.0
+  * boost-regex:x64-windows-static-md@1.88.0
+  * boost-tokenizer:x64-windows-static-md@1.88.0
+  * boost-tuple:x64-windows-static-md@1.88.0
+  * boost-typeof:x64-windows-static-md@1.88.0
+  * boost-unordered:x64-windows-static-md@1.88.0
+    fmt:x64-windows-static-md@11.0.2#1
+    gtest:x64-windows-static-md@1.17.0#1
+Additional packages (*) will be modified to complete this operation.
+Restored 0 package(s) from C:\Users\catal\AppData\Local\vcpkg\archives in 914 us. Use --debug to see more details.
+Installing 1/34 boost-intrusive:x64-windows-static-md@1.88.0...
+Building boost-intrusive:x64-windows-static-md@1.88.0...
+-- Using cached boostorg-intrusive-boost-1.88.0.tar.gz
+-- Cleaning sources at C:/Users/catal/vcpkg/buildtrees/boost-intrusive/src/ost-1.88.0-2b4f794aaf.clean. Use --editable to skip cleaning for the packages you specify.
+-- Extracting source C:/Users/catal/vcpkg/downloads/boostorg-intrusive-boost-1.88.0.tar.gz
+-- Using source at C:/Users/catal/vcpkg/buildtrees/boost-intrusive/src/ost-1.88.0-2b4f794aaf.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows-static-md
+-- Building x64-windows-static-md-rel
+-- Installing: C:/Users/catal/vcpkg/packages/boost-intrusive_x64-windows-static-md/share/boost-intrusive/copyright
+-- Performing post-build validation
+Starting submission of boost-intrusive:x64-windows-static-md@1.88.0 to 1 binary cache(s) in the background
+Elapsed time to handle boost-intrusive:x64-windows-static-md: 2.4 s
+boost-intrusive:x64-windows-static-md package ABI: 0e11f58518a5c14cb8cd0ec96033893067aacd033f848f2cc46c5e459c83a5c3
+Installing 2/34 boost-endian:x64-windows-static-md@1.88.0...
+Building boost-endian:x64-windows-static-md@1.88.0...
+Downloading https://github.com/boostorg/endian/archive/boost-1.88.0.tar.gz -> boostorg-endian-boost-1.88.0.tar.gz
+Successfully downloaded boostorg-endian-boost-1.88.0.tar.gz
+-- Extracting source C:/Users/catal/vcpkg/downloads/boostorg-endian-boost-1.88.0.tar.gz
+-- Using source at C:/Users/catal/vcpkg/buildtrees/boost-endian/src/ost-1.88.0-0d2c52168c.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows-static-md
+-- Building x64-windows-static-md-rel
+-- Installing: C:/Users/catal/vcpkg/packages/boost-endian_x64-windows-static-md/share/boost-endian/copyright
+-- Performing post-build validation
+Starting submission of boost-endian:x64-windows-static-md@1.88.0 to 1 binary cache(s) in the background
+Elapsed time to handle boost-endian:x64-windows-static-md: 4 s
+boost-endian:x64-windows-static-md package ABI: c3c9646d4bb1824ac04b9914c2738b2784c51f2036f61b32851f95c6a6bb6a8c
+Completed submission of boost-intrusive:x64-windows-static-md@1.88.0 to 1 binary cache(s) in 97.6 ms
+Installing 3/34 boost-container:x64-windows-static-md@1.88.0...
+Building boost-container:x64-windows-static-md@1.88.0...
+Downloading https://github.com/boostorg/container/archive/boost-1.88.0.tar.gz -> boostorg-container-boost-1.88.0.tar.gz
+Successfully downloaded boostorg-container-boost-1.88.0.tar.gz
+-- Extracting source C:/Users/catal/vcpkg/downloads/boostorg-container-boost-1.88.0.tar.gz
+-- Applying patch posix-threads.diff
+-- Using source at C:/Users/catal/vcpkg/buildtrees/boost-container/src/ost-1.88.0-ff96641865.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows-static-md
+-- Building x64-windows-static-md-dbg
+-- Building x64-windows-static-md-rel
+-- Installing: C:/Users/catal/vcpkg/packages/boost-container_x64-windows-static-md/share/boost-container/copyright
+-- Performing post-build validation
+Starting submission of boost-container:x64-windows-static-md@1.88.0 to 1 binary cache(s) in the background
+Elapsed time to handle boost-container:x64-windows-static-md: 7.3 s
+boost-container:x64-windows-static-md package ABI: 2748c2ee405705b07e69c40ad11bf28ede51a8c01eb3c6d4160c642d11d1c625
+Completed submission of boost-endian:x64-windows-static-md@1.88.0 to 1 binary cache(s) in 56.7 ms
+Installing 4/34 boost-bind:x64-windows-static-md@1.88.0...
+Building boost-bind:x64-windows-static-md@1.88.0...
+Downloading https://github.com/boostorg/bind/archive/boost-1.88.0.tar.gz -> boostorg-bind-boost-1.88.0.tar.gz
+Successfully downloaded boostorg-bind-boost-1.88.0.tar.gz
+-- Extracting source C:/Users/catal/vcpkg/downloads/boostorg-bind-boost-1.88.0.tar.gz
+-- Using source at C:/Users/catal/vcpkg/buildtrees/boost-bind/src/ost-1.88.0-bf0ada17c7.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows-static-md
+-- Building x64-windows-static-md-rel
+-- Installing: C:/Users/catal/vcpkg/packages/boost-bind_x64-windows-static-md/share/boost-bind/copyright
+-- Performing post-build validation
+Starting submission of boost-bind:x64-windows-static-md@1.88.0 to 1 binary cache(s) in the background
+Elapsed time to handle boost-bind:x64-windows-static-md: 4.5 s
+boost-bind:x64-windows-static-md package ABI: 5fcd9171ddae577d10b4637841396e0b22a77546964a24f8ef648926a1e03be2
+Completed submission of boost-container:x64-windows-static-md@1.88.0 to 1 binary cache(s) in 205 ms
+Installing 5/34 boost-mpl:x64-windows-static-md@1.88.0...
+Building boost-mpl:x64-windows-static-md@1.88.0...
+Downloading https://github.com/boostorg/mpl/archive/boost-1.88.0.tar.gz -> boostorg-mpl-boost-1.88.0.tar.gz
+Successfully downloaded boostorg-mpl-boost-1.88.0.tar.gz
+-- Extracting source C:/Users/catal/vcpkg/downloads/boostorg-mpl-boost-1.88.0.tar.gz
+-- Applying patch fix-msvc-build.diff
+-- Using source at C:/Users/catal/vcpkg/buildtrees/boost-mpl/src/ost-1.88.0-fa0ace56fe.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows-static-md
+-- Building x64-windows-static-md-rel
+-- Installing: C:/Users/catal/vcpkg/packages/boost-mpl_x64-windows-static-md/share/boost-mpl/copyright
+-- Performing post-build validation
+Starting submission of boost-mpl:x64-windows-static-md@1.88.0 to 1 binary cache(s) in the background
+Elapsed time to handle boost-mpl:x64-windows-static-md: 7.5 s
+boost-mpl:x64-windows-static-md package ABI: d176e05150ea37256637d13ca6df95cfa5f0b1e956da06ccff616df18b96885f
+Completed submission of boost-bind:x64-windows-static-md@1.88.0 to 1 binary cache(s) in 52.6 ms
+Installing 6/34 boost-typeof:x64-windows-static-md@1.88.0...
+Building boost-typeof:x64-windows-static-md@1.88.0...
+Downloading https://github.com/boostorg/typeof/archive/boost-1.88.0.tar.gz -> boostorg-typeof-boost-1.88.0.tar.gz
+Successfully downloaded boostorg-typeof-boost-1.88.0.tar.gz
+-- Extracting source C:/Users/catal/vcpkg/downloads/boostorg-typeof-boost-1.88.0.tar.gz
+-- Using source at C:/Users/catal/vcpkg/buildtrees/boost-typeof/src/ost-1.88.0-dc32e7fe62.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows-static-md
+-- Building x64-windows-static-md-rel
+-- Installing: C:/Users/catal/vcpkg/packages/boost-typeof_x64-windows-static-md/share/boost-typeof/copyright
+-- Performing post-build validation
+Starting submission of boost-typeof:x64-windows-static-md@1.88.0 to 1 binary cache(s) in the background
+Elapsed time to handle boost-typeof:x64-windows-static-md: 4.4 s
+boost-typeof:x64-windows-static-md package ABI: e882a576333a2bfd150462f016e69d6678d236fef56639004f48d40235149dd5
+Completed submission of boost-mpl:x64-windows-static-md@1.88.0 to 1 binary cache(s) in 252 ms
+Installing 7/34 boost-tuple:x64-windows-static-md@1.88.0...
+Building boost-tuple:x64-windows-static-md@1.88.0...
+Downloading https://github.com/boostorg/tuple/archive/boost-1.88.0.tar.gz -> boostorg-tuple-boost-1.88.0.tar.gz
+Successfully downloaded boostorg-tuple-boost-1.88.0.tar.gz
+-- Extracting source C:/Users/catal/vcpkg/downloads/boostorg-tuple-boost-1.88.0.tar.gz
+-- Using source at C:/Users/catal/vcpkg/buildtrees/boost-tuple/src/ost-1.88.0-1590de8f80.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows-static-md
+-- Building x64-windows-static-md-rel
+-- Installing: C:/Users/catal/vcpkg/packages/boost-tuple_x64-windows-static-md/share/boost-tuple/copyright
+-- Performing post-build validation
+Starting submission of boost-tuple:x64-windows-static-md@1.88.0 to 1 binary cache(s) in the background
+Elapsed time to handle boost-tuple:x64-windows-static-md: 3 s
+boost-tuple:x64-windows-static-md package ABI: bc90c39bbe9d9a326fff01f2628babcc60a792f7c96351216bdb9bb737e718db
+Completed submission of boost-typeof:x64-windows-static-md@1.88.0 to 1 binary cache(s) in 57.7 ms
+Installing 8/34 boost-detail:x64-windows-static-md@1.88.0...
+Building boost-detail:x64-windows-static-md@1.88.0...
+Downloading https://github.com/boostorg/detail/archive/boost-1.88.0.tar.gz -> boostorg-detail-boost-1.88.0.tar.gz
+Successfully downloaded boostorg-detail-boost-1.88.0.tar.gz
+-- Extracting source C:/Users/catal/vcpkg/downloads/boostorg-detail-boost-1.88.0.tar.gz
+-- Using source at C:/Users/catal/vcpkg/buildtrees/boost-detail/src/ost-1.88.0-5224a59fa4.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows-static-md
+-- Building x64-windows-static-md-rel
+-- Installing: C:/Users/catal/vcpkg/packages/boost-detail_x64-windows-static-md/share/boost-detail/copyright
+-- Performing post-build validation
+Starting submission of boost-detail:x64-windows-static-md@1.88.0 to 1 binary cache(s) in the background
+Elapsed time to handle boost-detail:x64-windows-static-md: 4 s
+boost-detail:x64-windows-static-md package ABI: 065c6b3f7b98d5d7a601610525d7509b64c2dbb537aabdadfe8948cf190ffafa
+Completed submission of boost-tuple:x64-windows-static-md@1.88.0 to 1 binary cache(s) in 58.5 ms
+Installing 9/34 boost-function-types:x64-windows-static-md@1.88.0...
+Building boost-function-types:x64-windows-static-md@1.88.0...
+Downloading https://github.com/boostorg/function_types/archive/boost-1.88.0.tar.gz -> boostorg-function_types-boost-1.88.0.tar.gz
+Successfully downloaded boostorg-function_types-boost-1.88.0.tar.gz
+-- Extracting source C:/Users/catal/vcpkg/downloads/boostorg-function_types-boost-1.88.0.tar.gz
+-- Using source at C:/Users/catal/vcpkg/buildtrees/boost-function-types/src/ost-1.88.0-c035a812a9.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows-static-md
+-- Building x64-windows-static-md-rel
+-- Installing: C:/Users/catal/vcpkg/packages/boost-function-types_x64-windows-static-md/share/boost-function-types/copyright
+-- Performing post-build validation
+Starting submission of boost-function-types:x64-windows-static-md@1.88.0 to 1 binary cache(s) in the background
+Elapsed time to handle boost-function-types:x64-windows-static-md: 2.8 s
+boost-function-types:x64-windows-static-md package ABI: b8d28b8749babd0b46cb3c765eb76f4ef382481880a42be47c171e06eafc543a
+Completed submission of boost-detail:x64-windows-static-md@1.88.0 to 1 binary cache(s) in 57.7 ms
+Installing 10/34 boost-function:x64-windows-static-md@1.88.0...
+Building boost-function:x64-windows-static-md@1.88.0...
+Downloading https://github.com/boostorg/function/archive/boost-1.88.0.tar.gz -> boostorg-function-boost-1.88.0.tar.gz
+Successfully downloaded boostorg-function-boost-1.88.0.tar.gz
+-- Extracting source C:/Users/catal/vcpkg/downloads/boostorg-function-boost-1.88.0.tar.gz
+-- Using source at C:/Users/catal/vcpkg/buildtrees/boost-function/src/ost-1.88.0-e750071483.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows-static-md
+-- Building x64-windows-static-md-rel
+-- Installing: C:/Users/catal/vcpkg/packages/boost-function_x64-windows-static-md/share/boost-function/copyright
+-- Performing post-build validation
+Starting submission of boost-function:x64-windows-static-md@1.88.0 to 1 binary cache(s) in the background
+Elapsed time to handle boost-function:x64-windows-static-md: 4.1 s
+boost-function:x64-windows-static-md package ABI: f0816df0362beece31bfcff3505c6e6998abf2e15f249cd8490bc9086ac9d62b
+Completed submission of boost-function-types:x64-windows-static-md@1.88.0 to 1 binary cache(s) in 61.9 ms
+Installing 11/34 boost-functional:x64-windows-static-md@1.88.0...
+Building boost-functional:x64-windows-static-md@1.88.0...
+Downloading https://github.com/boostorg/functional/archive/boost-1.88.0.tar.gz -> boostorg-functional-boost-1.88.0.tar.gz
+Successfully downloaded boostorg-functional-boost-1.88.0.tar.gz
+-- Extracting source C:/Users/catal/vcpkg/downloads/boostorg-functional-boost-1.88.0.tar.gz
+-- Using source at C:/Users/catal/vcpkg/buildtrees/boost-functional/src/ost-1.88.0-5f23a228ff.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows-static-md
+-- Building x64-windows-static-md-rel
+-- Installing: C:/Users/catal/vcpkg/packages/boost-functional_x64-windows-static-md/share/boost-functional/copyright
+-- Performing post-build validation
+Starting submission of boost-functional:x64-windows-static-md@1.88.0 to 1 binary cache(s) in the background
+Elapsed time to handle boost-functional:x64-windows-static-md: 2.7 s
+boost-functional:x64-windows-static-md package ABI: a4ba669654eaf2414bdc22bda4768d7f5cf41fa4b8b25cf4c077d51364f919ba
+Completed submission of boost-function:x64-windows-static-md@1.88.0 to 1 binary cache(s) in 56 ms
+Installing 12/34 boost-fusion:x64-windows-static-md@1.88.0...
+Building boost-fusion:x64-windows-static-md@1.88.0...
+Downloading https://github.com/boostorg/fusion/archive/boost-1.88.0.tar.gz -> boostorg-fusion-boost-1.88.0.tar.gz
+Successfully downloaded boostorg-fusion-boost-1.88.0.tar.gz
+-- Extracting source C:/Users/catal/vcpkg/downloads/boostorg-fusion-boost-1.88.0.tar.gz
+-- Using source at C:/Users/catal/vcpkg/buildtrees/boost-fusion/src/ost-1.88.0-1dce9c04b1.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows-static-md
+-- Building x64-windows-static-md-rel
+-- Installing: C:/Users/catal/vcpkg/packages/boost-fusion_x64-windows-static-md/share/boost-fusion/copyright
+-- Performing post-build validation
+Starting submission of boost-fusion:x64-windows-static-md@1.88.0 to 1 binary cache(s) in the background
+Elapsed time to handle boost-fusion:x64-windows-static-md: 7.7 s
+boost-fusion:x64-windows-static-md package ABI: 5de8bf07b4736b0f41fd62e6ffa6592692ae5573d58a6e8864e197a17bf15f62
+Completed submission of boost-functional:x64-windows-static-md@1.88.0 to 1 binary cache(s) in 58.2 ms
+Installing 13/34 boost-concept-check:x64-windows-static-md@1.88.0...
+Building boost-concept-check:x64-windows-static-md@1.88.0...
+Downloading https://github.com/boostorg/concept_check/archive/boost-1.88.0.tar.gz -> boostorg-concept_check-boost-1.88.0.tar.gz
+Successfully downloaded boostorg-concept_check-boost-1.88.0.tar.gz
+-- Extracting source C:/Users/catal/vcpkg/downloads/boostorg-concept_check-boost-1.88.0.tar.gz
+-- Using source at C:/Users/catal/vcpkg/buildtrees/boost-concept-check/src/ost-1.88.0-b83e6f9b40.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows-static-md
+-- Building x64-windows-static-md-rel
+-- Installing: C:/Users/catal/vcpkg/packages/boost-concept-check_x64-windows-static-md/share/boost-concept-check/copyright
+-- Performing post-build validation
+Starting submission of boost-concept-check:x64-windows-static-md@1.88.0 to 1 binary cache(s) in the background
+Elapsed time to handle boost-concept-check:x64-windows-static-md: 3.5 s
+boost-concept-check:x64-windows-static-md package ABI: 7c0cfe552856785749d76ed5043000bbb081d0cb915e2957338b67465e4d9ab1
+Completed submission of boost-fusion:x64-windows-static-md@1.88.0 to 1 binary cache(s) in 299 ms
+Installing 14/34 boost-iterator:x64-windows-static-md@1.88.0...
+Building boost-iterator:x64-windows-static-md@1.88.0...
+Downloading https://github.com/boostorg/iterator/archive/boost-1.88.0.tar.gz -> boostorg-iterator-boost-1.88.0.tar.gz
+Successfully downloaded boostorg-iterator-boost-1.88.0.tar.gz
+-- Extracting source C:/Users/catal/vcpkg/downloads/boostorg-iterator-boost-1.88.0.tar.gz
+-- Using source at C:/Users/catal/vcpkg/buildtrees/boost-iterator/src/ost-1.88.0-51514a5505.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows-static-md
+-- Building x64-windows-static-md-rel
+-- Installing: C:/Users/catal/vcpkg/packages/boost-iterator_x64-windows-static-md/share/boost-iterator/copyright
+-- Performing post-build validation
+Starting submission of boost-iterator:x64-windows-static-md@1.88.0 to 1 binary cache(s) in the background
+Elapsed time to handle boost-iterator:x64-windows-static-md: 3.1 s
+boost-iterator:x64-windows-static-md package ABI: aab3b35b106b2962fa48d020580c0c02832baaa56d91d740f79eb1954ac8708e
+Completed submission of boost-concept-check:x64-windows-static-md@1.88.0 to 1 binary cache(s) in 56.8 ms
+Installing 15/34 boost-tokenizer:x64-windows-static-md@1.88.0...
+Building boost-tokenizer:x64-windows-static-md@1.88.0...
+Downloading https://github.com/boostorg/tokenizer/archive/boost-1.88.0.tar.gz -> boostorg-tokenizer-boost-1.88.0.tar.gz
+Successfully downloaded boostorg-tokenizer-boost-1.88.0.tar.gz
+-- Extracting source C:/Users/catal/vcpkg/downloads/boostorg-tokenizer-boost-1.88.0.tar.gz
+-- Using source at C:/Users/catal/vcpkg/buildtrees/boost-tokenizer/src/ost-1.88.0-2778161568.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows-static-md
+-- Building x64-windows-static-md-rel
+-- Installing: C:/Users/catal/vcpkg/packages/boost-tokenizer_x64-windows-static-md/share/boost-tokenizer/copyright
+-- Performing post-build validation
+Starting submission of boost-tokenizer:x64-windows-static-md@1.88.0 to 1 binary cache(s) in the background
+Elapsed time to handle boost-tokenizer:x64-windows-static-md: 3.9 s
+boost-tokenizer:x64-windows-static-md package ABI: 1807a3e9a367507a2697a4fa87f3229786c0448b32ca26076b8d97267d5d4f6b
+Completed submission of boost-iterator:x64-windows-static-md@1.88.0 to 1 binary cache(s) in 59.9 ms
+Installing 16/34 boost-integer:x64-windows-static-md@1.88.0...
+Building boost-integer:x64-windows-static-md@1.88.0...
+Downloading https://github.com/boostorg/integer/archive/boost-1.88.0.tar.gz -> boostorg-integer-boost-1.88.0.tar.gz
+Successfully downloaded boostorg-integer-boost-1.88.0.tar.gz
+-- Extracting source C:/Users/catal/vcpkg/downloads/boostorg-integer-boost-1.88.0.tar.gz
+-- Using source at C:/Users/catal/vcpkg/buildtrees/boost-integer/src/ost-1.88.0-164b88b839.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows-static-md
+-- Building x64-windows-static-md-rel
+-- Installing: C:/Users/catal/vcpkg/packages/boost-integer_x64-windows-static-md/share/boost-integer/copyright
+-- Performing post-build validation
+Starting submission of boost-integer:x64-windows-static-md@1.88.0 to 1 binary cache(s) in the background
+Elapsed time to handle boost-integer:x64-windows-static-md: 2.7 s
+boost-integer:x64-windows-static-md package ABI: 8a3b60cbb5e40169ac9f6c901f4aec664e94d43068aa6d0d1f0a79f3b132746d
+Completed submission of boost-tokenizer:x64-windows-static-md@1.88.0 to 1 binary cache(s) in 56 ms
+Installing 17/34 boost-regex:x64-windows-static-md@1.88.0...
+Building boost-regex:x64-windows-static-md@1.88.0...
+Downloading https://github.com/boostorg/regex/archive/boost-1.88.0.tar.gz -> boostorg-regex-boost-1.88.0.tar.gz
+Successfully downloaded boostorg-regex-boost-1.88.0.tar.gz
+-- Extracting source C:/Users/catal/vcpkg/downloads/boostorg-regex-boost-1.88.0.tar.gz
+-- Applying patch compat.diff
+-- Using source at C:/Users/catal/vcpkg/buildtrees/boost-regex/src/ost-1.88.0-2c223cbe1f.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows-static-md
+-- Building x64-windows-static-md-rel
+-- Installing: C:/Users/catal/vcpkg/packages/boost-regex_x64-windows-static-md/share/boost-regex/copyright
+-- Performing post-build validation
+Starting submission of boost-regex:x64-windows-static-md@1.88.0 to 1 binary cache(s) in the background
+Elapsed time to handle boost-regex:x64-windows-static-md: 9.5 s
+boost-regex:x64-windows-static-md package ABI: aab7c477f5355c254d49a0c199fded7e572698787fcd51f852e11765fc65becb
+Completed submission of boost-integer:x64-windows-static-md@1.88.0 to 1 binary cache(s) in 54.7 ms
+Installing 18/34 boost-conversion:x64-windows-static-md@1.88.0...
+Building boost-conversion:x64-windows-static-md@1.88.0...
+Downloading https://github.com/boostorg/conversion/archive/boost-1.88.0.tar.gz -> boostorg-conversion-boost-1.88.0.tar.gz
+Successfully downloaded boostorg-conversion-boost-1.88.0.tar.gz
+-- Extracting source C:/Users/catal/vcpkg/downloads/boostorg-conversion-boost-1.88.0.tar.gz
+-- Using source at C:/Users/catal/vcpkg/buildtrees/boost-conversion/src/ost-1.88.0-77611f6ca4.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows-static-md
+-- Building x64-windows-static-md-rel
+-- Installing: C:/Users/catal/vcpkg/packages/boost-conversion_x64-windows-static-md/share/boost-conversion/copyright
+-- Performing post-build validation
+Starting submission of boost-conversion:x64-windows-static-md@1.88.0 to 1 binary cache(s) in the background
+Elapsed time to handle boost-conversion:x64-windows-static-md: 3.6 s
+boost-conversion:x64-windows-static-md package ABI: 3bb858ee578ed77ab9917acb4733ace9a22f6517f5d12c8632a3bd0f2f0b09a2
+Completed submission of boost-regex:x64-windows-static-md@1.88.0 to 1 binary cache(s) in 79.7 ms
+Installing 19/34 boost-array:x64-windows-static-md@1.88.0...
+Building boost-array:x64-windows-static-md@1.88.0...
+Downloading https://github.com/boostorg/array/archive/boost-1.88.0.tar.gz -> boostorg-array-boost-1.88.0.tar.gz
+Successfully downloaded boostorg-array-boost-1.88.0.tar.gz
+-- Extracting source C:/Users/catal/vcpkg/downloads/boostorg-array-boost-1.88.0.tar.gz
+-- Using source at C:/Users/catal/vcpkg/buildtrees/boost-array/src/ost-1.88.0-2adb23ad65.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows-static-md
+-- Building x64-windows-static-md-rel
+-- Installing: C:/Users/catal/vcpkg/packages/boost-array_x64-windows-static-md/share/boost-array/copyright
+-- Performing post-build validation
+Starting submission of boost-array:x64-windows-static-md@1.88.0 to 1 binary cache(s) in the background
+Elapsed time to handle boost-array:x64-windows-static-md: 2.5 s
+boost-array:x64-windows-static-md package ABI: 3ec49dc9394bf169182eca73e15d10f3669e7b60c9fad58366acb3b8f6d27227
+Completed submission of boost-conversion:x64-windows-static-md@1.88.0 to 1 binary cache(s) in 46.2 ms
+Installing 20/34 boost-range:x64-windows-static-md@1.88.0...
+Building boost-range:x64-windows-static-md@1.88.0...
+Downloading https://github.com/boostorg/range/archive/boost-1.88.0.tar.gz -> boostorg-range-boost-1.88.0.tar.gz
+Successfully downloaded boostorg-range-boost-1.88.0.tar.gz
+-- Extracting source C:/Users/catal/vcpkg/downloads/boostorg-range-boost-1.88.0.tar.gz
+-- Using source at C:/Users/catal/vcpkg/buildtrees/boost-range/src/ost-1.88.0-5653dbb6ea.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows-static-md
+-- Building x64-windows-static-md-rel
+-- Installing: C:/Users/catal/vcpkg/packages/boost-range_x64-windows-static-md/share/boost-range/copyright
+-- Performing post-build validation
+Starting submission of boost-range:x64-windows-static-md@1.88.0 to 1 binary cache(s) in the background
+Elapsed time to handle boost-range:x64-windows-static-md: 4.6 s
+boost-range:x64-windows-static-md package ABI: 5f0f8deb0cb862c76f37bb24c9d2f73e60477fba1733c257932f7097e4f933bd
+Completed submission of boost-array:x64-windows-static-md@1.88.0 to 1 binary cache(s) in 51.3 ms
+Installing 21/34 boost-numeric-conversion:x64-windows-static-md@1.88.0...
+Building boost-numeric-conversion:x64-windows-static-md@1.88.0...
+Downloading https://github.com/boostorg/numeric_conversion/archive/boost-1.88.0.tar.gz -> boostorg-numeric_conversion-boost-1.88.0.tar.gz
+Successfully downloaded boostorg-numeric_conversion-boost-1.88.0.tar.gz
+-- Extracting source C:/Users/catal/vcpkg/downloads/boostorg-numeric_conversion-boost-1.88.0.tar.gz
+-- Using source at C:/Users/catal/vcpkg/buildtrees/boost-numeric-conversion/src/ost-1.88.0-0973b8e81b.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows-static-md
+-- Building x64-windows-static-md-rel
+-- Installing: C:/Users/catal/vcpkg/packages/boost-numeric-conversion_x64-windows-static-md/share/boost-numeric-conversion/copyright
+-- Performing post-build validation
+Starting submission of boost-numeric-conversion:x64-windows-static-md@1.88.0 to 1 binary cache(s) in the background
+Elapsed time to handle boost-numeric-conversion:x64-windows-static-md: 4.1 s
+boost-numeric-conversion:x64-windows-static-md package ABI: d46c7b06d39c59c76dd2c8df804f5a01a1971274a045d71f889e5e6137cad2c1
+Completed submission of boost-range:x64-windows-static-md@1.88.0 to 1 binary cache(s) in 64.1 ms
+Installing 22/34 boost-lexical-cast:x64-windows-static-md@1.88.0...
+Building boost-lexical-cast:x64-windows-static-md@1.88.0...
+Downloading https://github.com/boostorg/lexical_cast/archive/boost-1.88.0.tar.gz -> boostorg-lexical_cast-boost-1.88.0.tar.gz
+Successfully downloaded boostorg-lexical_cast-boost-1.88.0.tar.gz
+-- Extracting source C:/Users/catal/vcpkg/downloads/boostorg-lexical_cast-boost-1.88.0.tar.gz
+-- Using source at C:/Users/catal/vcpkg/buildtrees/boost-lexical-cast/src/ost-1.88.0-d2336c6fb5.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows-static-md
+-- Building x64-windows-static-md-rel
+-- Installing: C:/Users/catal/vcpkg/packages/boost-lexical-cast_x64-windows-static-md/share/boost-lexical-cast/copyright
+-- Performing post-build validation
+Starting submission of boost-lexical-cast:x64-windows-static-md@1.88.0 to 1 binary cache(s) in the background
+Elapsed time to handle boost-lexical-cast:x64-windows-static-md: 2.5 s
+boost-lexical-cast:x64-windows-static-md package ABI: f0ec87a74123f124d2c2599b40de5480896e489ae53f618b2bf13d91bc4a9e00
+Completed submission of boost-numeric-conversion:x64-windows-static-md@1.88.0 to 1 binary cache(s) in 54.8 ms
+Installing 23/34 boost-unordered:x64-windows-static-md@1.88.0...
+Building boost-unordered:x64-windows-static-md@1.88.0...
+Downloading https://github.com/boostorg/unordered/archive/boost-1.88.0.tar.gz -> boostorg-unordered-boost-1.88.0.tar.gz
+Successfully downloaded boostorg-unordered-boost-1.88.0.tar.gz
+-- Extracting source C:/Users/catal/vcpkg/downloads/boostorg-unordered-boost-1.88.0.tar.gz
+-- Using source at C:/Users/catal/vcpkg/buildtrees/boost-unordered/src/ost-1.88.0-92b6910f5b.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows-static-md
+-- Building x64-windows-static-md-rel
+-- Installing: C:/Users/catal/vcpkg/packages/boost-unordered_x64-windows-static-md/share/boost-unordered/copyright
+-- Performing post-build validation
+Starting submission of boost-unordered:x64-windows-static-md@1.88.0 to 1 binary cache(s) in the background
+Elapsed time to handle boost-unordered:x64-windows-static-md: 4.6 s
+boost-unordered:x64-windows-static-md package ABI: 3140a47fcffdcffb4e407e7a937409a3242c897dcac1a018f1c4bda4efa15cf4
+Completed submission of boost-lexical-cast:x64-windows-static-md@1.88.0 to 1 binary cache(s) in 53.6 ms
+Installing 24/34 boost-exception:x64-windows-static-md@1.88.0...
+Building boost-exception:x64-windows-static-md@1.88.0...
+Downloading https://github.com/boostorg/exception/archive/boost-1.88.0.tar.gz -> boostorg-exception-boost-1.88.0.tar.gz
+Successfully downloaded boostorg-exception-boost-1.88.0.tar.gz
+-- Extracting source C:/Users/catal/vcpkg/downloads/boostorg-exception-boost-1.88.0.tar.gz
+-- Using source at C:/Users/catal/vcpkg/buildtrees/boost-exception/src/ost-1.88.0-18fd31ba7d.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows-static-md
+-- Building x64-windows-static-md-rel
+-- Installing: C:/Users/catal/vcpkg/packages/boost-exception_x64-windows-static-md/share/boost-exception/copyright
+-- Performing post-build validation
+Starting submission of boost-exception:x64-windows-static-md@1.88.0 to 1 binary cache(s) in the background
+Elapsed time to handle boost-exception:x64-windows-static-md: 3.9 s
+boost-exception:x64-windows-static-md package ABI: d0417400f58b8b775801039efd784bc86517fe19323571aba30e2611e993e14c
+Completed submission of boost-unordered:x64-windows-static-md@1.88.0 to 1 binary cache(s) in 79.5 ms
+Installing 25/34 boost-algorithm:x64-windows-static-md@1.88.0...
+Building boost-algorithm:x64-windows-static-md@1.88.0...
+Downloading https://github.com/boostorg/algorithm/archive/boost-1.88.0.tar.gz -> boostorg-algorithm-boost-1.88.0.tar.gz
+Successfully downloaded boostorg-algorithm-boost-1.88.0.tar.gz
+-- Extracting source C:/Users/catal/vcpkg/downloads/boostorg-algorithm-boost-1.88.0.tar.gz
+-- Using source at C:/Users/catal/vcpkg/buildtrees/boost-algorithm/src/ost-1.88.0-2e7cb75cc7.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows-static-md
+-- Building x64-windows-static-md-rel
+-- Installing: C:/Users/catal/vcpkg/packages/boost-algorithm_x64-windows-static-md/share/boost-algorithm/copyright
+-- Performing post-build validation
+Starting submission of boost-algorithm:x64-windows-static-md@1.88.0 to 1 binary cache(s) in the background
+Elapsed time to handle boost-algorithm:x64-windows-static-md: 3.3 s
+boost-algorithm:x64-windows-static-md package ABI: 563ea859cfdcf07f2fe402b443b12a9d26902d2057b764e2a49378829b2baf79
+Completed submission of boost-exception:x64-windows-static-md@1.88.0 to 1 binary cache(s) in 48.5 ms
+Installing 26/34 boost-date-time:x64-windows-static-md@1.88.0...
+Building boost-date-time:x64-windows-static-md@1.88.0...
+Downloading https://github.com/boostorg/date_time/archive/boost-1.88.0.tar.gz -> boostorg-date_time-boost-1.88.0.tar.gz
+Successfully downloaded boostorg-date_time-boost-1.88.0.tar.gz
+-- Extracting source C:/Users/catal/vcpkg/downloads/boostorg-date_time-boost-1.88.0.tar.gz
+-- Using source at C:/Users/catal/vcpkg/buildtrees/boost-date-time/src/ost-1.88.0-7b3bfadd76.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows-static-md
+-- Building x64-windows-static-md-dbg
+-- Building x64-windows-static-md-rel
+-- Installing: C:/Users/catal/vcpkg/packages/boost-date-time_x64-windows-static-md/share/boost-date-time/copyright
+-- Performing post-build validation
+Starting submission of boost-date-time:x64-windows-static-md@1.88.0 to 1 binary cache(s) in the background
+Elapsed time to handle boost-date-time:x64-windows-static-md: 5.3 s
+boost-date-time:x64-windows-static-md package ABI: 231ae50c221559279b54fbb38c0590b7808c7cac9c7d87b0323050af644cbf8e
+Completed submission of boost-algorithm:x64-windows-static-md@1.88.0 to 1 binary cache(s) in 61.5 ms
+Installing 27/34 boost-pool:x64-windows-static-md@1.88.0...
+Building boost-pool:x64-windows-static-md@1.88.0...
+Downloading https://github.com/boostorg/pool/archive/boost-1.88.0.tar.gz -> boostorg-pool-boost-1.88.0.tar.gz
+Successfully downloaded boostorg-pool-boost-1.88.0.tar.gz
+-- Extracting source C:/Users/catal/vcpkg/downloads/boostorg-pool-boost-1.88.0.tar.gz
+-- Using source at C:/Users/catal/vcpkg/buildtrees/boost-pool/src/ost-1.88.0-5369ec1359.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows-static-md
+-- Building x64-windows-static-md-rel
+-- Installing: C:/Users/catal/vcpkg/packages/boost-pool_x64-windows-static-md/share/boost-pool/copyright
+-- Performing post-build validation
+Starting submission of boost-pool:x64-windows-static-md@1.88.0 to 1 binary cache(s) in the background
+Elapsed time to handle boost-pool:x64-windows-static-md: 3.7 s
+boost-pool:x64-windows-static-md package ABI: d47c5f7ad362aed4c5ce3b8c04d853e9aa3b9f965277e051ebadc6bfe8a5affd
+Completed submission of boost-date-time:x64-windows-static-md@1.88.0 to 1 binary cache(s) in 63.4 ms
+Installing 28/34 boost-context:x64-windows-static-md@1.88.0...
+Building boost-context:x64-windows-static-md@1.88.0...
+Downloading https://github.com/boostorg/context/archive/boost-1.88.0.tar.gz -> boostorg-context-boost-1.88.0.tar.gz
+Successfully downloaded boostorg-context-boost-1.88.0.tar.gz
+-- Extracting source C:/Users/catal/vcpkg/downloads/boostorg-context-boost-1.88.0.tar.gz
+-- Applying patch marmasm.patch
+-- Using source at C:/Users/catal/vcpkg/buildtrees/boost-context/src/ost-1.88.0-ec1a1b465e.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows-static-md
+-- Building x64-windows-static-md-dbg
+-- Building x64-windows-static-md-rel
+-- Installing: C:/Users/catal/vcpkg/packages/boost-context_x64-windows-static-md/share/boost-context/copyright
+-- Performing post-build validation
+Starting submission of boost-context:x64-windows-static-md@1.88.0 to 1 binary cache(s) in the background
+Elapsed time to handle boost-context:x64-windows-static-md: 6.2 s
+boost-context:x64-windows-static-md package ABI: bf17ab231d501b02318cd7b443284e75c5e41ac6b307973896bf9171c1037a76
+Completed submission of boost-pool:x64-windows-static-md@1.88.0 to 1 binary cache(s) in 61.1 ms
+Installing 29/34 boost-align:x64-windows-static-md@1.88.0...
+Building boost-align:x64-windows-static-md@1.88.0...
+Downloading https://github.com/boostorg/align/archive/boost-1.88.0.tar.gz -> boostorg-align-boost-1.88.0.tar.gz
+Successfully downloaded boostorg-align-boost-1.88.0.tar.gz
+-- Extracting source C:/Users/catal/vcpkg/downloads/boostorg-align-boost-1.88.0.tar.gz
+-- Using source at C:/Users/catal/vcpkg/buildtrees/boost-align/src/ost-1.88.0-8fde060681.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows-static-md
+-- Building x64-windows-static-md-rel
+-- Installing: C:/Users/catal/vcpkg/packages/boost-align_x64-windows-static-md/share/boost-align/copyright
+-- Performing post-build validation
+Starting submission of boost-align:x64-windows-static-md@1.88.0 to 1 binary cache(s) in the background
+Elapsed time to handle boost-align:x64-windows-static-md: 3.7 s
+boost-align:x64-windows-static-md package ABI: f23ddb36c9c19dab3056d5d396a6865b0e479fda2d6228bd779c986045039a3b
+Completed submission of boost-context:x64-windows-static-md@1.88.0 to 1 binary cache(s) in 80.7 ms
+Installing 30/34 boost-asio:x64-windows-static-md@1.88.0...
+Building boost-asio:x64-windows-static-md@1.88.0...
+Downloading https://github.com/boostorg/asio/archive/boost-1.88.0.tar.gz -> boostorg-asio-boost-1.88.0.tar.gz
+Successfully downloaded boostorg-asio-boost-1.88.0.tar.gz
+-- Extracting source C:/Users/catal/vcpkg/downloads/boostorg-asio-boost-1.88.0.tar.gz
+-- Applying patch opt-dep.diff
+-- Using source at C:/Users/catal/vcpkg/buildtrees/boost-asio/src/ost-1.88.0-72a6ff0ea7.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows-static-md
+-- Building x64-windows-static-md-rel
+-- Installing: C:/Users/catal/vcpkg/packages/boost-asio_x64-windows-static-md/share/boost-asio/copyright
+-- Performing post-build validation
+Starting submission of boost-asio:x64-windows-static-md@1.88.0 to 1 binary cache(s) in the background
+Elapsed time to handle boost-asio:x64-windows-static-md: 6 s
+boost-asio:x64-windows-static-md package ABI: b950a91c3ca29bcc19ee7527c30c3252588aa19623b0957ddc5c8ada6b3bc90f
+Completed submission of boost-align:x64-windows-static-md@1.88.0 to 1 binary cache(s) in 57.7 ms
+Installing 31/34 boost-beast:x64-windows-static-md@1.88.0...
+Building boost-beast:x64-windows-static-md@1.88.0...
+Downloading https://github.com/boostorg/beast/archive/boost-1.88.0.tar.gz -> boostorg-beast-boost-1.88.0.tar.gz
+Successfully downloaded boostorg-beast-boost-1.88.0.tar.gz
+-- Extracting source C:/Users/catal/vcpkg/downloads/boostorg-beast-boost-1.88.0.tar.gz
+-- Using source at C:/Users/catal/vcpkg/buildtrees/boost-beast/src/ost-1.88.0-ed0e315c86.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows-static-md
+-- Building x64-windows-static-md-rel
+-- Installing: C:/Users/catal/vcpkg/packages/boost-beast_x64-windows-static-md/share/boost-beast/copyright
+-- Performing post-build validation
+Starting submission of boost-beast:x64-windows-static-md@1.88.0 to 1 binary cache(s) in the background
+Elapsed time to handle boost-beast:x64-windows-static-md: 6 s
+boost-beast:x64-windows-static-md package ABI: ed53fdf9fdfc5a266c25c46f252e62330b144ef2ee5657a7811f7e433dea0b70
+Completed submission of boost-asio:x64-windows-static-md@1.88.0 to 1 binary cache(s) in 164 ms
+Installing 32/34 boost-json:x64-windows-static-md@1.88.0...
+Building boost-json:x64-windows-static-md@1.88.0...
+Downloading https://github.com/boostorg/json/archive/boost-1.88.0.tar.gz -> boostorg-json-boost-1.88.0.tar.gz
+Successfully downloaded boostorg-json-boost-1.88.0.tar.gz
+-- Extracting source C:/Users/catal/vcpkg/downloads/boostorg-json-boost-1.88.0.tar.gz
+-- Using source at C:/Users/catal/vcpkg/buildtrees/boost-json/src/ost-1.88.0-7ced681773.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows-static-md
+-- Building x64-windows-static-md-dbg
+-- Building x64-windows-static-md-rel
+-- Installing: C:/Users/catal/vcpkg/packages/boost-json_x64-windows-static-md/share/boost-json/copyright
+-- Performing post-build validation
+Starting submission of boost-json:x64-windows-static-md@1.88.0 to 1 binary cache(s) in the background
+Elapsed time to handle boost-json:x64-windows-static-md: 19 s
+boost-json:x64-windows-static-md package ABI: d934d290358db55ff83d5c863b2d7ba26f90d38d7c3e269232c4f564f6f47c84
+Completed submission of boost-beast:x64-windows-static-md@1.88.0 to 1 binary cache(s) in 119 ms
+Installing 33/34 fmt:x64-windows-static-md@11.0.2#1...
+Building fmt:x64-windows-static-md@11.0.2#1...
+Downloading https://github.com/fmtlib/fmt/archive/11.0.2.tar.gz -> fmtlib-fmt-11.0.2.tar.gz
+Successfully downloaded fmtlib-fmt-11.0.2.tar.gz
+-- Extracting source C:/Users/catal/vcpkg/downloads/fmtlib-fmt-11.0.2.tar.gz
+-- Applying patch fix-write-batch.patch
+-- Applying patch fix-pass-utf-8-only-if-the-compiler-is-MSVC-at-build.patch
+-- Using source at C:/Users/catal/vcpkg/buildtrees/fmt/src/11.0.2-c30c0a133f.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows-static-md
+-- Building x64-windows-static-md-dbg
+-- Building x64-windows-static-md-rel
+-- Fixing pkgconfig file: C:/Users/catal/vcpkg/packages/fmt_x64-windows-static-md/lib/pkgconfig/fmt.pc
+Downloading msys2-mingw-w64-x86_64-pkgconf-1~2.4.3-1-any.pkg.tar.zst, trying https://mirror.msys2.org/mingw/mingw64/mingw-w64-x86_64-pkgconf-1~2.4.3-1-any.pkg.tar.zst
+Successfully downloaded msys2-mingw-w64-x86_64-pkgconf-1~2.4.3-1-any.pkg.tar.zst
+Downloading msys2-msys2-runtime-3.6.2-2-x86_64.pkg.tar.zst, trying https://mirror.msys2.org/msys/x86_64/msys2-runtime-3.6.2-2-x86_64.pkg.tar.zst
+Successfully downloaded msys2-msys2-runtime-3.6.2-2-x86_64.pkg.tar.zst
+-- Using msys root at C:/Users/catal/vcpkg/downloads/tools/msys2/9272adbcaf19caef
+-- Fixing pkgconfig file: C:/Users/catal/vcpkg/packages/fmt_x64-windows-static-md/debug/lib/pkgconfig/fmt.pc
+-- Installing: C:/Users/catal/vcpkg/packages/fmt_x64-windows-static-md/share/fmt/usage
+-- Installing: C:/Users/catal/vcpkg/packages/fmt_x64-windows-static-md/share/fmt/copyright
+-- Performing post-build validation
+Starting submission of fmt:x64-windows-static-md@11.0.2#1 to 1 binary cache(s) in the background
+Elapsed time to handle fmt:x64-windows-static-md: 13 s
+fmt:x64-windows-static-md package ABI: f3dce3311db2f9ec8c247212d423718d1219f03f2b23917175d40240375417a6
+Completed submission of boost-json:x64-windows-static-md@1.88.0 to 1 binary cache(s) in 751 ms
+Installing 34/34 gtest:x64-windows-static-md@1.17.0#1...
+Building gtest:x64-windows-static-md@1.17.0#1...
+Downloading https://github.com/google/googletest/archive/v1.17.0.tar.gz -> google-googletest-v1.17.0.tar.gz
+Successfully downloaded google-googletest-v1.17.0.tar.gz
+-- Extracting source C:/Users/catal/vcpkg/downloads/google-googletest-v1.17.0.tar.gz
+-- Applying patch 001-fix-UWP-death-test.patch
+-- Applying patch clang-tidy-no-lint.patch
+-- Applying patch fix-main-lib-path.patch
+-- Using source at C:/Users/catal/vcpkg/buildtrees/gtest/src/v1.17.0-0c449efaff.clean
+-- Found external ninja('1.12.1').
+-- Configuring x64-windows-static-md
+-- Building x64-windows-static-md-dbg
+-- Building x64-windows-static-md-rel
+-- Installing: C:/Users/catal/vcpkg/packages/gtest_x64-windows-static-md/src/gtest.cc
+-- Installing: C:/Users/catal/vcpkg/packages/gtest_x64-windows-static-md/src/gtest_main.cc
+-- Installing: C:/Users/catal/vcpkg/packages/gtest_x64-windows-static-md/src/gtest-all.cc
+-- Installing: C:/Users/catal/vcpkg/packages/gtest_x64-windows-static-md/src/gtest-assertion-result.cc
+-- Installing: C:/Users/catal/vcpkg/packages/gtest_x64-windows-static-md/src/gtest-death-test.cc
+-- Installing: C:/Users/catal/vcpkg/packages/gtest_x64-windows-static-md/src/gtest-filepath.cc
+-- Installing: C:/Users/catal/vcpkg/packages/gtest_x64-windows-static-md/src/gtest-internal-inl.h
+-- Installing: C:/Users/catal/vcpkg/packages/gtest_x64-windows-static-md/src/gtest-matchers.cc
+-- Installing: C:/Users/catal/vcpkg/packages/gtest_x64-windows-static-md/src/gtest-port.cc
+-- Installing: C:/Users/catal/vcpkg/packages/gtest_x64-windows-static-md/src/gtest-printers.cc
+-- Installing: C:/Users/catal/vcpkg/packages/gtest_x64-windows-static-md/src/gtest-test-part.cc
+-- Installing: C:/Users/catal/vcpkg/packages/gtest_x64-windows-static-md/src/gtest-typed-test.cc
+-- Fixing pkgconfig file: C:/Users/catal/vcpkg/packages/gtest_x64-windows-static-md/lib/pkgconfig/gmock.pc
+-- Fixing pkgconfig file: C:/Users/catal/vcpkg/packages/gtest_x64-windows-static-md/lib/pkgconfig/gmock_main.pc
+-- Fixing pkgconfig file: C:/Users/catal/vcpkg/packages/gtest_x64-windows-static-md/lib/pkgconfig/gtest.pc
+-- Fixing pkgconfig file: C:/Users/catal/vcpkg/packages/gtest_x64-windows-static-md/lib/pkgconfig/gtest_main.pc
+-- Using cached msys2-mingw-w64-x86_64-pkgconf-1~2.4.3-1-any.pkg.tar.zst
+-- Using cached msys2-msys2-runtime-3.6.2-2-x86_64.pkg.tar.zst
+-- Using msys root at C:/Users/catal/vcpkg/downloads/tools/msys2/9272adbcaf19caef
+-- Fixing pkgconfig file: C:/Users/catal/vcpkg/packages/gtest_x64-windows-static-md/debug/lib/pkgconfig/gmock.pc
+-- Fixing pkgconfig file: C:/Users/catal/vcpkg/packages/gtest_x64-windows-static-md/debug/lib/pkgconfig/gmock_main.pc
+-- Fixing pkgconfig file: C:/Users/catal/vcpkg/packages/gtest_x64-windows-static-md/debug/lib/pkgconfig/gtest.pc
+-- Fixing pkgconfig file: C:/Users/catal/vcpkg/packages/gtest_x64-windows-static-md/debug/lib/pkgconfig/gtest_main.pc
+-- Installing: C:/Users/catal/vcpkg/packages/gtest_x64-windows-static-md/share/gtest/copyright
+-- Installing: C:/Users/catal/vcpkg/packages/gtest_x64-windows-static-md/share/gtest/usage
+-- Performing post-build validation
+Starting submission of gtest:x64-windows-static-md@1.17.0#1 to 1 binary cache(s) in the background
+Elapsed time to handle gtest:x64-windows-static-md: 36 s
+gtest:x64-windows-static-md package ABI: 7b971b1e025399fe94670b42ed587b03667c0b461046a4a5dd4ded098591f865
+Installed contents are licensed to you by owners. Microsoft is not responsible for, nor does it grant any licenses to, third-party packages.
+Packages installed in this vcpkg installation declare the following licenses:
+BSD-3-Clause
+BSL-1.0
+MIT
 The package boost-beast is compatible with built-in CMake targets of FindBoost.cmake:
 
     find_package(Boost REQUIRED COMPONENTS beast)
@@ -103,8 +669,17 @@ The package gtest is compatible with built-in CMake targets:
     
     add_test(AllTestsInMain main)
 
-All requested installations completed successfully in: 2.24 ms
+Completed submission of fmt:x64-windows-static-md@11.0.2#1 to 1 binary cache(s) in 745 ms
+Waiting for 1 remaining binary cache submissions...
+Completed submission of gtest:x64-windows-static-md@1.17.0#1 to 1 binary cache(s) in 2.5 s (1/1)
+All requested installations completed successfully in: 3.4 min
 -- Running vcpkg install - done
--- Configuring done (5.5s)
+-- The CXX compiler identification is MSVC 19.44.35213.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (215.0s)
 -- Generating done (0.1s)
 -- Build files have been written to: C:/Users/catal/CLionProjects/HugeCplasplas/cmake-build-debug

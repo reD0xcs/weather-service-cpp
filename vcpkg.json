@@ -1,10 +1,20 @@
 {
-  "name": "huge-cplusplus",
+  "name": "weather-service-cpp",
   "version": "0.1.0",
+  "description": "C++23 weather micro-service",
   "dependencies": [
     "boost-beast",
     "boost-json",
     "gtest",
     "fmt"
-  ]
+  ],
+  "builtin-baseline": "dd3097e305afa53f7b4312371f62058d2e665320",
+  "overrides": [
+    {
+      "name": "boost-json",
+      "version": "1.88.0",
+      "port-version": 0
+    }
+  ],
+  "supports": "x64 & windows"
 }

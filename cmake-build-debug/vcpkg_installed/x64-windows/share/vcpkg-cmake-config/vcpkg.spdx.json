@@ -3,13 +3,13 @@
   "spdxVersion": "SPDX-2.2",
   "dataLicense": "CC0-1.0",
   "SPDXID": "SPDXRef-DOCUMENT",
-  "documentNamespace": "https://spdx.org/spdxdocs/vcpkg-cmake-config-x64-windows-2024-05-23-23957186-fde1-46a5-abab-7a34c12cc127",
-  "name": "vcpkg-cmake-config:x64-windows@2024-05-23 a822d4dbcd57991f0ecaa00c2fbf7671a5177236c01d7e49ed74475655b3e279",
+  "documentNamespace": "https://spdx.org/spdxdocs/vcpkg-cmake-config-x64-windows-2024-05-23-d7f70d1f-ea34-4ae1-80fd-983ae582d836",
+  "name": "vcpkg-cmake-config:x64-windows@2024-05-23 157a338b3fbb13ae7ee7af5ba31e57bf38c9a83ba663c692eaaac2862f5af1f0",
   "creationInfo": {
     "creators": [
-      "Tool: vcpkg-2025-07-16-d6c019e723df46cb8c36360e4174b111455567d3"
+      "Tool: vcpkg-2025-07-21-d4b65a2b83ae6c3526acd1c6f3b51aff2a884533"
     ],
-    "created": "2025-07-22T11:20:24Z"
+    "created": "2025-07-25T16:22:28Z"
   },
   "relationships": [
     {
@@ -83,7 +83,7 @@
       "name": "vcpkg-cmake-config",
       "SPDXID": "SPDXRef-port",
       "versionInfo": "2024-05-23",
-      "downloadLocation": "git+https://github.com/Microsoft/vcpkg#ports/vcpkg-cmake-config",
+      "downloadLocation": "git+https://github.com/Microsoft/vcpkg@97a63e4bc1a17422ffe4eff71da53b4b561a7841",
       "licenseConcluded": "MIT",
       "licenseDeclared": "NOASSERTION",
       "copyrightText": "NOASSERTION",
@@ -92,7 +92,7 @@
     {
       "name": "vcpkg-cmake-config:x64-windows",
       "SPDXID": "SPDXRef-binary",
-      "versionInfo": "a822d4dbcd57991f0ecaa00c2fbf7671a5177236c01d7e49ed74475655b3e279",
+      "versionInfo": "157a338b3fbb13ae7ee7af5ba31e57bf38c9a83ba663c692eaaac2862f5af1f0",
       "downloadLocation": "NONE",
       "licenseConcluded": "MIT",
       "licenseDeclared": "NOASSERTION",

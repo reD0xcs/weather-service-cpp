@@ -4,10 +4,10 @@
 #include "src/infrastructure/providers/i_weather_provider.hpp"
 #include <string>
 
-class OpenWeatherProvider : public IWeatherProvider {
+class OpenWeatherProvider final : public IWeatherProvider {
 public:
-    explicit OpenWeatherProvider(std::string apiKey);
-    std::optional<Weather> fetch(const City&) override;
+    explicit OpenWeatherProvider(std::string_view apiKey);
+    std::optional<Weather> fetch(const City& city) override;
 private:
     std::string apiKey_;
 };

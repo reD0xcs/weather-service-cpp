@@ -3,13 +3,13 @@
   "spdxVersion": "SPDX-2.2",
   "dataLicense": "CC0-1.0",
   "SPDXID": "SPDXRef-DOCUMENT",
-  "documentNamespace": "https://spdx.org/spdxdocs/vcpkg-boost-x64-windows-2025-03-29-fa5ceab4-7192-49dc-88cc-b62ecd2b8fe9",
-  "name": "vcpkg-boost:x64-windows@2025-03-29 01ffc75677ae9978a0beef3937f8a34fc2cb3cb6e0013c229ddbb47b9699988d",
+  "documentNamespace": "https://spdx.org/spdxdocs/vcpkg-boost-x64-windows-2025-03-29-aa61e9e7-968b-4c7b-94b6-bf165e542d16",
+  "name": "vcpkg-boost:x64-windows@2025-03-29 7af8e4268d680a7c67ed1da157e40aab64cc081e18b5d1d60d8cb283a2dbd734",
   "creationInfo": {
     "creators": [
-      "Tool: vcpkg-2025-07-16-d6c019e723df46cb8c36360e4174b111455567d3"
+      "Tool: vcpkg-2025-07-21-d4b65a2b83ae6c3526acd1c6f3b51aff2a884533"
     ],
-    "created": "2025-07-22T11:20:24Z"
+    "created": "2025-07-25T16:22:28Z"
   },
   "relationships": [
     {
@@ -83,7 +83,7 @@
       "name": "vcpkg-boost",
       "SPDXID": "SPDXRef-port",
       "versionInfo": "2025-03-29",
-      "downloadLocation": "git+https://github.com/Microsoft/vcpkg#ports/vcpkg-boost",
+      "downloadLocation": "git+https://github.com/Microsoft/vcpkg@858b0333b773b5650c3f19ef271e3205542d7ceb",
       "licenseConcluded": "MIT",
       "licenseDeclared": "NOASSERTION",
       "copyrightText": "NOASSERTION",
@@ -92,7 +92,7 @@
     {
       "name": "vcpkg-boost:x64-windows",
       "SPDXID": "SPDXRef-binary",
-      "versionInfo": "01ffc75677ae9978a0beef3937f8a34fc2cb3cb6e0013c229ddbb47b9699988d",
+      "versionInfo": "7af8e4268d680a7c67ed1da157e40aab64cc081e18b5d1d60d8cb283a2dbd734",
       "downloadLocation": "NONE",
       "licenseConcluded": "MIT",
       "licenseDeclared": "NOASSERTION",
